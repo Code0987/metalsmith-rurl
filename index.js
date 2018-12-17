@@ -1,5 +1,5 @@
 'use strict';
-var needles = require('needle-string');
+var path = require('path');
 
 module.exports = plugin;
 
@@ -8,11 +8,10 @@ function plugin() {
 		Object.keys(files).forEach(function (file) {
 			setImmediate(done);
 
-			var paths = files[file].path.split("\\");
+			var paths = files[file].path.split(path.sep);
             paths.pop();
-            var path = paths.join("/");
             
-			files[file].rurl = path;
+			files[file].rurl = paths.join("/");
 		});
 	};
 }
