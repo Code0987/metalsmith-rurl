@@ -9,7 +9,9 @@ function plugin() {
 			setImmediate(done);
 
 			var paths = files[file].path.split(path.sep);
-            paths.pop();
+			paths.pop();
+			
+			console.log(paths);
             
 			files[file].rurl = paths.join("/");
 		});
