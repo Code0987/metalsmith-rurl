@@ -1,0 +1,6 @@
+node_modules
+*.log
+
+# don't track test builds
+test/fixtures/static/build
+test/fixtures/reorder/build
