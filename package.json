@@ -27,7 +27,7 @@
   "license": "MIT",
   "devDependencies": {
     "co-mocha": "^1.1.2",
-    "harmonize": "^1.4.4",
+    "harmonize": "^2.0.0",
     "metalsmith": "^2.0.1",
     "metalsmith-permalinks": "^0.5.0",
     "mocha": "^2.2.5",
